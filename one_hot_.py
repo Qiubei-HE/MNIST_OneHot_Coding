@@ -19,7 +19,7 @@ def one_hot_encoder(x):
     out = np.zeros((len(x), nclasses))
     # Für jede Probe den Index der entsprechenden Klasse auf 1 setzen #对于每个样本，将对应的类索引位置设为1
     for i, x_ in enumerate(x):
-        out[i, x_] = 1
+        out[i, x_] = 1                   #在矩阵第i行第x_列输出结果为1  
     return out
 
 # Funktion testen
