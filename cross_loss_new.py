@@ -20,7 +20,7 @@ def cat_cross_entropy(params, x, y_true):
     y_pred = model.apply(params, x)
 
     # Calculation of the loss per example
-    loss_per_example = -jnp.sum(y_true * jnp.log(y_pred + 1e-8), axis=1)
+    loss_per_example = -jnp.sum(y_true * jnp.log(y_pred ), axis=1)
 
 
     # Return the mean loss across all examples
